@@ -16,7 +16,7 @@ jobs:
           fetch-depth: 0
           repository: vertexbox/flake-bot
 
-      - name: Deploy to Vercel Action (dae-governor)
+      - name: Deploy to Vercel Action
         uses: BetaHuhn/deploy-to-vercel-action@v1
         with:
           PRODUCTION: true
