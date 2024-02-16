@@ -1,0 +1,30 @@
+---
+sync_rules:
+  - name: dotfile_submodules
+    from:
+      - "yqlbu/dot-qutebrowser"
+      - "yqlbu/dot-waybar"
+      - "yqlbu/dot-nvim"
+      - "yqlbu/dot-lf"
+      - "yqlbu/dot-lazygit"
+      - "yqlbu/dot-rofi"
+      - "yqlbu/dot-swaylock"
+      - "yqlbu/dot-swappy"
+      - "yqlbu/dot-tmux"
+      - "yqlbu/dot-fish"
+      - "yqlbu/dot-hypr"
+      - "yqlbu/dot-dunst"
+      - "yqlbu/dot-kitty"
+    to: "yqlbu/dotfiles.nix"
+  - name: dotfiles_nixos
+    from:
+      - "yqlbu/dotfiles.nix"
+    to: "yqlbu/nixos-config"
+  - name: secrets_nixos
+    from:
+      - "yqlbu/sops-credentials"
+    to: "yqlbu/nixos-config"
+  - name: home_estate_nixos
+    from:
+      - "yqlbu/home-estate"
+    to: "yqlbu/nixos-config"
