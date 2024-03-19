@@ -17,6 +17,7 @@ sync_rules:
       - "yqlbu/dot-swaync"
       - "yqlbu/dot-kitty"
       - "yqlbu/dot-alacritty"
+      - "yqlbu/dot-foot"
     to: "yqlbu/dotfiles.nix"
   - name: dotfiles_nixos
     from:
