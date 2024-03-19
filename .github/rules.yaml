@@ -22,11 +22,3 @@ sync_rules:
     from:
       - "yqlbu/dotfiles.nix"
     to: "yqlbu/nixos-config"
-  - name: secrets_nixos
-    from:
-      - "yqlbu/sops-credentials"
-    to: "yqlbu/nixos-config"
-  - name: home_estate_nixos
-    from:
-      - "yqlbu/home-estate"
-    to: "yqlbu/nixos-config"
